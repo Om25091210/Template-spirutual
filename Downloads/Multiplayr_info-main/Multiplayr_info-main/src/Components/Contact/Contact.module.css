@@ -1,0 +1,305 @@
+.container{
+    margin: 80px 0;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    width: 100%;
+    
+}
+
+.discordContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 500px; */
+    width: 80%;
+}
+
+
+
+.email-box{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.email-input{
+    border: 1px solid #b7fd20;
+    margin : 10px 5px;
+}
+
+
+.discordContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 70%;
+    
+   
+    
+}
+.contactHead{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    margin-top: 10vh;
+    padding: 40px;
+    width: 300px;
+    color: #ff00ea;
+}
+.star_1{
+    /* height: 20px;
+    top: 0%;
+    left: 0;
+    display: inline-flex;
+    animation: bounce 3s linear 0s infinite; */
+    /* color: var(--colors-text-primary)!important; */
+    /* color: #3200fc; */
+}
+
+
+.discordHeading{
+font-size: 75px;
+line-height: 1;
+margin-top: 10px;
+font-weight: 700;
+}
+
+.discordTitle h1{
+    margin-top: 0px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: var(--headingFontFamily);
+    background: var(--mp-primaryGrad);
+    color: transparent;
+    letter-spacing: 0.1em;
+    /* background-image: linear-gradient(26deg, #2600fc, #ff00ea); */
+    /* background:   #b7fd20; */
+    margin-top: 0px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.discordContent p{
+    font-size: 1 rem;
+    margin-top: -20px;
+    line-height: 1;
+    letter-spacing: normal;
+}
+
+.discordbtn{
+    background-color: #b7fd20;
+    background-image: #b7fd20;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 8px;
+    letter-spacing: normal;
+    /* margin-top: 30px; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+   
+    
+}
+
+/* .discordbtn:hover{
+    background-image: linear-gradient(26deg, #3200fc, #ff00eaf0);
+    box-shadow: inset 0 0 0 2px 0 transparent;
+} */
+
+.emailBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.submitBtn{
+    background: linear-gradient(90deg, #b7fd20 0%, #d7ef59 100%);
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.submitBtn:hover{
+    opacity: 0.8;
+}
+
+.emailInput{
+    font-size: 14px;
+    padding: 10px 20px;
+    color: black;
+
+    border-radius: 5px;
+    border-color: linear-gradient(90deg, #b7fd20 0%, #d7ef59 100%);
+    border-width: 2px;
+}
+
+
+
+
+.socialContainer{
+    /* display: grid; */
+    display: flex;
+    /* grid-template-rows: 33% 33% 33%; */
+    flex-direction: row;
+    justify-content: center;
+    
+    /* height: 700px; */
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    /* margin-top: 50px ; */
+}
+
+.socialItems{
+    /* background-color: red; */
+    /* height: 300px;
+    width: 300px; */
+    margin-bottom: 0!important;
+    display: flow-root;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+}
+.socialIcons{
+    /* width: 150px; */
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    /* font-size: large; */
+    color: white;
+    /* cursor: pointer; */
+}
+
+
+.socialIcons i{
+    font-size: 40px;
+    cursor: pointer;
+    margin: 20px;
+}
+.socialIcons i:hover{
+    transform: scale(1.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+ .condition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    font-weight: 500;
+    
+}
+.reserved{
+    display: flex;
+    justify-content: center;
+}
+/* .rightImage , .leftImage{
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+} */
+
+
+
+@media (max-width:425px) {
+ 
+    .reserved p{
+        margin-bottom: 20px;
+     }
+     .footer{
+        margin-bottom: 20px;
+     }
+}
+
+@media (max-width:426px) {
+    
+    .discordContent{
+        height: 300px;
+    }
+    
+    .discordContent h1{
+        font-size: 40px;
+      
+        }
+        .discordContent p{
+            font-size: 1rem;
+            text-align: center;
+    /* line-height: 1.5; */
+        }
+        .discordbtn{
+            
+            font-size: 17px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 30px;
+            letter-spacing: normal;
+            /* margin-top: 30px; */
+            margin-left: 30px;
+            
+        }
+        .socialIcons i{
+            font-size: 30px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .condition {
+            width: 50%;
+            margin: 10px;
+            font-weight: 500;
+            justify-content: space-around;
+            margin-left:  30px;
+            margin: auto;
+            margin-top: 10px ;
+            margin-bottom: 10px ;
+            
+        }
+        .socialContainer{
+          
+            
+            /* height: 700px; */
+            width: 100%;
+            height: 100px;
+            bottom: 10px;
+            /* margin-top: 50px ; */
+        }
+        /* .reserved{
+            margin-bottom: 20px;
+        } */
+}
+
+
+
+/*---------------- Styles for screens with a minimum width of 768px and maximum width of 1023px (tablets) --------------------*/
+@media (min-width: 768px) and (max-width: 1024px) 
+ {
+    
+    .discordContent h1{
+        font-size: 96px;
+      
+        }
+
+  
+    }

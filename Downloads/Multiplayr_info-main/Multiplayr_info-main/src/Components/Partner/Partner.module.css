@@ -1,0 +1,88 @@
+.container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .content {
+    background: var(--mp-primaryGrad);
+    height: auto;
+    margin: 90px 15%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .partners {
+    display: flex;
+    gap: 10px;
+    padding: 50px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .partner {
+    height: auto;
+    margin: 1rem 1rem;
+    width: 350px;
+    transition: transform 1s ease-in-out; 
+  }
+  
+  .partner :hover {
+    scale:1.1;
+    
+  } 
+
+
+  @media (max-width:424px) {
+
+    .partner {
+      height: auto;
+      margin: 1rem 1rem;
+      width: 200px;
+      transition: transform 1s ease-in-out; 
+    }
+    .content {
+        margin-top: 20px;
+      }
+  }
+  
+  @media (min-width:425px)and(max-width: 767px) {
+    /* .partner {
+      height: auto;
+      margin: 1rem 1rem;
+      width: 200px;
+      transition: transform 1s ease-in-out; 
+    } */
+    .partners {
+      
+      gap: 5px;
+      padding: 20px 20px;
+      
+      
+    }
+    .content {
+      
+      margin: 10px 15px;
+      
+    }
+    .content {
+        margin: 50px 0px;
+      }
+  }
+  
+  /*---------------- Styles for screens with a minimum width of 768px and maximum width of 1023px (tablets) --------------------*/
+  @media (min-width: 768px) and (max-width: 1024px) 
+  
+    {
+      /* .content {
+        margin-top: 80px;
+      } */
+     
+  
+    
+    }
+  

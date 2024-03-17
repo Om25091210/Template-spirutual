@@ -1,0 +1,24 @@
+.overlay-image {
+  position: absolute;
+  top: 50%; /* Adjust the position from the top */
+  left: 50%; /* Adjust the position from the left */
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Set the z-index to be above the background image */
+  /* Additional styles for the overlay image */
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+}
+
+.overlay-img-png {
+  position: absolute;
+  height:fit-content;
+  width: auto;
+  top: 0;
+  right: 0; /* Align from the right side */
+  object-fit: cover;
+  display: flex;
+  /* justify-content: flex-end;
+  align-items: flex-start; */
+  z-index: 0;
+  opacity: 0.8;
+}

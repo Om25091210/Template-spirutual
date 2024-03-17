@@ -1,0 +1,131 @@
+.container{
+    
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    transition: 0.3s ease-out;
+}
+
+.container:hover{
+    transform: scale(1.02);
+}
+
+.newsImage{
+    gap: 10px;
+    height: 300px;
+    width: 360px;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+
+.newsContent{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+    font-family: var(--headingFontFamily);
+    
+}
+
+.vl{
+
+        background-color: white;
+        width: 0.8px;
+        height: 170px;
+        opacity: 0.4;
+        margin-right: 0px;     
+}
+
+
+.news{
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    flex-wrap: wrap;
+}
+
+.news p{
+    font-size: 16px;
+}
+
+.news h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.readMoreContainer p{
+    display: inline-block;
+  font-size: 15px;
+  letter-spacing: .1em;
+  color: var(--primaryColor);
+  background: var(--mp-primaryGrad); 
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* 
+.readMoreContainer {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: relative;
+    transition: var(--transition);
+    background: linear-gradient(135deg,#FA26CA 0%,#712AF9 100%);
+} */
+
+
+
+@media (max-width:425px) {
+ 
+    .container{
+    
+        min-width: 100%;
+        /* flex-direction: column; */
+        
+    
+    }
+    .newsImage{
+        gap: 10px;
+        height: 300px;
+        width: 400px;
+        border-radius: 15px;
+    
+    }
+}
+
+@media (min-width:426px)and(max-width: 767px) {
+    
+   
+}
+
+/*---------------- Styles for screens with a minimum width of 768px and maximum width of 1023px (tablets) --------------------*/
+@media (min-width: 768px) and (max-width: 1024px) 
+
+  {
+    .container{
+    
+        min-width: 100%;
+        /* flex-direction: column; */
+        
+    
+    }
+    .newsImage{
+        gap: 10px;
+        height: 300px;
+        width: 400px;
+        border-radius: 15px;
+    
+    }
+    
+ 
+
+  
+  }

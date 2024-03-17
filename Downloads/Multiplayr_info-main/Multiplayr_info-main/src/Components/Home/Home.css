@@ -1,0 +1,325 @@
+/* Home.css */
+
+.home-layout {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .home-layout {
+    max-width: 100%;
+  }
+}
+
+.background-img {
+  position: relative;
+  inset: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(102%) brightness(90%);
+}
+
+.overlay-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  top: 0;
+  display: flex;
+  z-index: 2;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inner-div-left {
+  flex: 4;
+  flex-shrink: 0;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 2rem; /* Adjust padding for smaller screens */
+  margin: 1rem; /* Adjust margin for smaller screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.overlay-img {
+  max-width: 100%; /* Make the image responsive */
+  opacity: 0.7;
+  z-index: -1;
+  height: auto;
+  position: absolute;
+  inset: 0;
+  animation: on-off 5s infinite linear;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-rot-img {
+  width: auto;
+  height: auto;
+  position: absolute;
+  margin: 6% 32%;
+  inset: 0;
+  animation: rotation 30s infinite linear;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.wrapper h1 {
+  font-family: var(--headingFontFamily);
+  font-size: 55px; /* Adjust font size for smaller screens */
+  font-weight: bold;
+  line-height: 45px; /* Adjust line height for smaller screens */
+  color: var(--whiteColor);
+  text-align: left;
+}
+
+.wrapper p {
+  margin: 1rem auto;
+  font-size: 16px; /* Adjust font size for smaller screens */
+  color: #beb8cc;
+  line-height: 24px; /* Adjust line height for smaller screens */
+}
+
+.inner-div-right {
+  flex: 3;
+  max-width: 100%;
+  min-width: 300px;
+  max-width: 40%; /* Adjust for smaller screens */
+  display: flex;
+  z-index: 5;
+  flex-direction: column;
+  justify-content: flex-end; /* Change 'end' to 'flex-end' for better responsiveness */
+  align-items: center;
+}
+
+.banner-img-div {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+}
+
+.img-ani-scale {
+  height: 550px; /* Adjust height for smaller screens */
+  margin: 0 auto;
+  margin-right: 0; /* Remove margin for smaller screens */
+  width: auto;
+}
+
+/* Media Query for Larger Screens */
+
+@media (min-width: 1600px) {
+  .img-ani-scale {
+    height: 800px; /* Adjust height for even larger screens */
+    margin: 0 auto;
+    margin-right: 0;
+    width: auto;
+  }
+    .wrapper h1 {
+    font-family: var(--headingFontFamily);
+    font-size: 90px; /* Adjust font size for larger screens */
+    font-weight: bold;
+    line-height: 45px; /* Adjust line height for larger screens */
+    color: var(--whiteColor);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .wrapper p {
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+  }
+
+}
+
+@media (min-width: 1380px) and (max-width: 1600px) {
+  html, body {
+    font-size: 1.25rem; /* Adjust the base font size for larger screens */
+  }
+
+  .inner-div-left {
+    padding: 2.5rem; /* Adjust padding for larger screens */
+    margin: 1rem; /* Adjust margin for larger screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .wrapper p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .img-ani-scale {
+    height: 650px;
+    margin: 0 auto;
+    margin-right: 0;
+    width: auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  .wrapper h1 {
+    font-family: var(--headingFontFamily);
+    font-size: 75px; /* Adjust font size for larger screens */
+    font-weight: bold;
+    line-height: 45px; /* Adjust line height for larger screens */
+    color: var(--whiteColor);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .wrapper p {
+    margin: 1rem auto;
+    font-size: 20px; /* Adjust font size for larger screens */
+    color: #beb8cc;
+    line-height: 24px; /* Adjust line height for larger screens */
+  }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 760px) {
+  body, p {
+    font-size: 13px;
+  }
+  .background-img {
+    position: relative;
+    inset: 0;
+    height: 90vh;
+  }
+
+  .overlay-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    top: 0;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner-div-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .wrapper {
+    margin-bottom: 0px;
+  }
+
+  .wrapper h1 {
+    font-family: var(--headingFontFamily);
+    font-size: 30px; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    line-height: 35px; /* Adjust line height for smaller screens */
+    color: var(--whiteColor);
+    text-align: center;
+  }
+
+  .wrapper p {
+    text-align: center;
+  }
+
+  .overlay-rot-img {
+    margin: 6% 16%;
+  }
+
+  .inner-div-right {
+    max-width: 100%;
+    width: 100%; /* Adjust for smaller screens */
+  }
+
+  .img-ani-scale {
+    height: 15rem;
+    padding-top: 2vh;
+  }
+}
+
+@media(max-width: 365px) and (max-height:570px) {
+  body, p {
+    font-size: 8px;
+  }
+  .img-ani-scale {
+    display: none;
+  }
+
+
+}
+
+/* Media Query for Very Small Screens */
+@media (max-height: 560px) and (max-width: 480px) {
+  .inner-div-left {
+    padding: 1rem; /* Adjust padding for very small screens */
+    margin: 0.5rem; /* Adjust margin for very small screens */
+  }
+
+  .overlay-rot-img {
+    margin: 6% 10%; /* Adjust margin for very small screens */
+  }
+
+  .img-ani-scale {
+    height: 16rem;
+    padding-top: 8vh;
+  }
+
+  .wrapper {
+    margin-bottom: 0px;
+  }
+
+  .wrapper h1 {
+    font-size: 24px; /* Adjust font size for very small screens */
+    line-height: 30px; /* Adjust line height for very small screens */
+  }
+
+  .wrapper p {
+    font-size: 12px; /* Adjust font size for very small screens */
+    line-height: 20px; /* Adjust line height for very small screens */
+  }
+}
+
+/* Keyframes for Animations */
+@keyframes on-off { 
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}

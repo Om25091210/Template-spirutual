@@ -1,0 +1,85 @@
+.container{
+  margin: 0px 0px;
+  margin-bottom: 50px;
+  /* background-color: red; */
+}
+
+/* .head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.head_about{
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: .1em;
+  color: var(--primaryColor);
+  background: linear-gradient(90.99deg,#FDCE39 .27%,#FD8963 30%,#ED5174 98.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.head_title{
+  margin-top: 0;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: var(--headingFontFamily);
+} */
+.newsItems{
+  margin: 10px 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; 
+  gap: 20px;
+  /* background-color: aqua; */
+}
+
+
+@media (max-width:425px) {
+  .newsItems{
+    margin: 10px 50px;
+    flex-direction: column;
+    
+  }
+
+}
+
+@media (max-width: 767px) {
+  .newsItems{
+    margin: 50px 50px;
+    flex-direction: column;
+    
+  }
+}
+
+/*---------------- Styles for screens with a minimum width of 768px and maximum width of 1023px (tablets) --------------------*/
+@media (min-width: 768px) and (max-width: 1024px) 
+
+  {
+    
+   
+    .newsItems{
+      margin: 50px 50px;
+      flex-direction: column;
+      align-items: flex-start;
+      
+      
+      
+    }
+  
+  }
+
+  @media screen and (min-width : 1500px) {
+    .newsItems{
+      margin: 10px 15%;
+    }
+
+  }

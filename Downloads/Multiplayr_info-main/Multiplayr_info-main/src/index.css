@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Changa';
+  src: url('./fonts/Changa/Changa-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+:root {
+  --fontFamily: "Roboto", sans-serif;
+  --headingFontFamily: "Changa", sans-serif;
+  --btnFontFamily: "Ubuntu", sans-serif;
+  --primaryColor: #712af9;
+  /* --primaryColor: #171717; */
+  --secondaryColor: #FA26CA;
+  --paragraphColor: #beb8cc;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  /* --bgColor: #1a1135; */
+  --bgColor: #171717;
+  --borderRadius: 5px;
+  --transition: .5s;
+  --fontSize: 16px;
+  --boxShadow: 0 0 20px 3px rgba(0, 0, 0, .05);
+
+  --mp-primaryColor:#b7fd20;
+  --mp-secondaryColor:#d7ef59;
+  --mp-black: #1c1c1e ;
+  --mp-bgBlack: #171717;
+  --mp-grayDark:#343a40;
+  --mp-gray:#6c757d;
+
+  --mp-primaryGrad: linear-gradient(90deg, #b7fd20 0%, #d7ef59 100%);
+
+  --mp-secondaryGrad: linear-gradient(90deg, #1c1c1e 0%, #171717 100%);
+
+  --mp-grayGrad: linear-gradient(90deg, #343a40 0%, #1c1c1e 100%);
+  --mp-grayGradT: linear-gradient(0deg,#1c1c1e  0%, #343a40 100%);
+}
+
+.ROOTFORMULTIPLAYR{
+  --lqd-color-primary: #b7fd1f;
+  --lqd-body-text-color: rgba(255, 255, 255, .47);
+  --lqd-color-link: #5b7bfb;
+  --lqd-color-link-hover: #181b31;
+  --lqd-color-gradient-start: #f42958;
+  --lqd-color-gradient-stop: #e4442a;
+  --lqd-color-dark: #171717;
+  --lqd-color-slate-900: #262626;
+  --lqd-color-gray-500: #818181;
+  --lqd-color-gray-700: #cbcbcb;
+  --lqd-color-gray-800: #1c1c1e;
+  --lqd-color-gray-900: #141414;
+  --lqd-color-footer: #1a1a1a;
+}
+
+html,body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  font-family:var(--fontFamily);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bgColor);
+  font-size: var(--fontSize);
+  color: var(--whiteColor);
+  overflow-x: hidden;
+
+
+
+}
+
+button{
+  font-family: var(--btnFontFamily);
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Multiplayr-Background-Gradient-Colour{
+  color:#b7fd20;
+  color:#d7ef59;
+  color: #1c1c1e ;
+  color: #171717;
+  background: linear-gradient(90deg, #b7fd20 0%, #d7ef59 100%);
+  background: linear-gradient(90deg, #1c1c1e 0%, #171717 100%);
+  background: linear-gradient(90deg, #39393de6 0%, #1c1c1e 100%);
+
+}
+

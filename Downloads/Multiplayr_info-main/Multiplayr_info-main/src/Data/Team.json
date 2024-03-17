@@ -1,0 +1,99 @@
+ [
+        {
+            "image": "assets/images/teams/Sonu.png",
+            "name": "Sonu Singh",
+            "position": "Co-founder/Playr-in-Chief",
+            "linkedin" : "https://www.linkedin.com/in/sonusinghzeus"
+          },
+          {
+            "image": "assets/images/teams/sagrika.jpeg",
+            "name": "Sagrika Paliwal",
+            "position": "Chief Social Interaction Officer",
+            "linkedin" : "https://www.linkedin.com/in/sagrika-paliwal"
+          },  
+          
+          
+          {
+            "image": "assets/images/teams/abhishekgupta.png",
+            "name": "Abhishek Gupta",
+            "position": "Co-founder/Code Commander in Chief",
+            "linkedin" : "https://www.linkedin.com/in/abhishek-gupta-87714a56"
+          },
+          {
+            "image": "assets/images/teams/Purnima.png",
+            "name": "Purnima Singh",
+            "position": "Digital Explorer-in-Chief",
+            "linkedin" : "https://www.linkedin.com/in/pspurnimasingh"
+          },
+
+
+          {
+            "image": "assets/images/teams/Shan.png",
+            "name": "Shan Raj",
+            "position": "Tech Comrade",
+            "linkedin" : "https://www.linkedin.com/in/shan-raj-41485195"
+          },
+          {
+          "image": "assets/images/teams/om.jpg",
+          "name": "Om Yadav",
+          "position": "Full Stack Comrade",
+          "linkedin" : "https://www.linkedin.com/in/omyadav/"
+          },
+
+
+          {
+            "image": "assets/images/teams/Ravi.png",
+            "name": "Ravi Linganuri",
+            "position": "Advisor",
+            "linkedin" : "https://www.linkedin.com/in/ravilinganuri"
+          },
+          {
+            "image": "assets/images/teams/swayam.jpg",
+            "name": "Swayam Karn",
+            "position": "Full Stack Comrade",
+            "linkedin" : "https://www.linkedin.com/in/swayam-kumar-karn/"
+          },
+
+         
+          {
+            "image": "assets/images/teams/raj.png ",
+            "name": "Rajkumar Dewangan",
+            "position": "Full Stack Comrade",
+            "linkedin" : "https://www.linkedin.com/in/rajkumar-dewangan/"          
+          },
+          {
+            "image": "assets/images/teams/gauravthawait.png",
+            "name": "Gaurav Thawait",
+            "position": "Full Stack Comrade",
+            "linkedin" : "https://www.linkedin.com/in/gauravthawait/"
+          },
+
+          
+          {
+            "image": "assets/images/teams/divyanshu.jpg",
+            "name": "Divyanshu Anand",
+            "position": "Full Stack Comrade",
+            "linkedin" : "https://www.linkedin.com/in/divyanshu-anand-b6b3a41bb/"
+          },
+          {
+            "image": "assets/images/teams/Gauravkumar.png",
+            "name": "Gaurav Kumar",
+            "position": "Operation Comrade",
+            "linkedin" : "https://www.linkedin.com/in/gauravthewriter/"
+          },
+      
+          {
+            "image": "assets/images/teams/heroImage.png",
+            "name": "Anamika Paliwal",
+            "position": "Social Alchemist",
+            "linkedin" : "https://www.linkedin.com/company/multiplayr/about/"
+          },
+          {
+            "image": "assets/images/teams/heroImage.png",
+            "name": "Mayank Singh",
+            "position": "Teach Comrade",
+            "linkedin" : "https://www.linkedin.com/company/multiplayr/about/"
+          } 
+      
+  ]
+

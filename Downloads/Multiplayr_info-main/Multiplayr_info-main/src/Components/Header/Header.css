@@ -1,0 +1,95 @@
+.i {
+  padding: 1rem 2rem;
+}
+
+/* .nav-border{
+  border-bottom: 2px solid #fa26ca;
+} */
+
+#progress-bar {
+  height: 2px; 
+  width: 100%;
+  /* border-radius: 5px; */
+  background-color: #b7fd1f; /* Set your desired progress bar color */
+  position: absolute;
+  bottom: 0; 
+  transition: width 0.5s ease;
+}
+
+.logo-div{
+  height: auto;
+  position:relative;
+  width: 90%; /* Make the image responsive */
+}
+ 
+.logo {
+  height: auto;
+  max-width: 100%; /* Make the image responsive */
+  width: auto;
+}
+
+
+@media (max-width:768) {
+  
+}
+.eff {
+  height: 3px;
+  width: 100%;
+  left: 0;
+  /* background: linear-gradient(135deg, #fa26ca 0%, #712af9 100%); */
+  background: var(--mp-primaryGrad);
+  border-radius: 25px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.eff-hover:hover + .eff{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.trans {
+  display: flex;
+}
+.trans:before {
+  content: " ";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  border-radius: 25px;
+  transform: scaleX(0);
+  /* background: linear-gradient(135deg, #fa26ca 0%, #712af9 100%); */
+  background: var(--mp-primaryGrad);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.trans:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.sp-btn {
+  background: linear-gradient(135deg, #fa26ca 0%, #712af9 100%);
+}
+
+.sp-btn2 {
+  background: linear-gradient(90deg, #b7fd20 0%, #d7ef59 100%);
+}
+
+.nav-hover {
+  right: 0;
+  width: 0;
+  border: 0;
+  height: 2px;
+  content: "";
+  bottom: 38px;
+  margin-left: 0;
+  position: absolute;
+  vertical-align: unset;
+  transition: 0.5s;
+  background: linear-gradient(135deg, #fa26ca 0%, #712af9 100%);
+}

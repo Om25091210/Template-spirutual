@@ -1,0 +1,99 @@
+.heading-margin {
+  padding-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  z-index: 10;
+  margin-bottom:60px;
+}
+
+.heading-title {
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  /* max-width: 755px; */
+  /* z-index: 1; */
+}
+
+.heading-title span {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* background: linear-gradient(90.99deg,#FDCE39 .27%,#FD8963 30%,#ED5174 98.69%); */
+  background: var(--mp-primaryGrad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: var(--headingFontFamily);
+  font-weight: 600;
+}
+
+.heading-title h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 55px;
+  font-family: var(--headingFontFamily);
+}
+
+@media (max-width: 768px) {
+  body,
+  p {
+    font-size: 13px;
+  }
+
+  .heading-title h2 {
+    font-family: var(--headingFontFamily);
+    font-size: 30px; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    line-height: 35px; /* Adjust line height for smaller screens */
+    color: var(--whiteColor);
+    text-align: center;
+  }
+  .wrapper p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-div-left {
+    padding: 1rem; /* Adjust padding for smaller screens */
+    margin: 0.5rem; /* Adjust margin for smaller screens */
+  }
+
+  .heading-title h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    line-height: 30px; /* Adjust line height for smaller screens */
+  }
+  .heading-title span {
+    font-size: 14px;
+    margin: auto auto; /* Adjust font size for smaller screens */
+    line-height: 20px; /* Adjust line height for smaller screens */
+  }
+}
+
+/* ----------------heading responsive---------------------------- */
+@media (max-width:425px) {
+ 
+
+}
+
+@media (min-width:426px)and(max-width: 767px) {
+  
+}
+
+/*---------------- Styles for screens with a minimum width of 768px and maximum width of 1023px (tablets) --------------------*/
+@media(min-width: 1024px){
+
+
+.heading-title span {
+  font-size: 25px;
+  letter-spacing: 0.05em;
+    
+   
+
+  
+  }
+} 

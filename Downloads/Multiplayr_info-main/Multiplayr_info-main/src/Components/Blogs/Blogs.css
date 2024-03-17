@@ -1,0 +1,140 @@
+.blog-layout {
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .blog-layout {
+    max-width: 100%;
+  }
+}
+
+.blog-news {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: fit-content;
+  max-width: fit-content;
+  overflow: hidden;
+}
+
+.background-img-blog {
+  position: relative;
+  inset: 0;
+  height: 50vh;
+  width: 100vw;
+  filter: contrast(102%) brightness(90%);
+}
+
+/* Base styles for larger screens */
+.overlay-div-blog {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+
+.wrapper-blog {
+  flex: 4;
+  flex-shrink: 0;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-blog h1 {
+  font-family: var(--headingFontFamily);
+  font-size: 75px; /* Adjust font size for smaller screens */
+  font-weight: bold;
+  line-height: 45px; /* Adjust line height for smaller screens */
+  color: var(--whiteColor);
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.span-blog{
+  background: var(--mp-primaryGrad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .background-img-blog{
+    height: 30vh;
+  }
+  .overlay-div-blog {
+    height: 30vh;
+     /* Adjust height for mobile */
+  }
+  .wrapper-blog h1{
+    font-size: 30px;
+  }
+  .overlay-rot-img-blog{
+    margin: 6% 16%;
+  }
+}
+
+.overlay-img-blog {
+  max-width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+  height: auto;
+  position: absolute;
+  inset: 0;
+  animation: on-off-blog 5s infinite linear;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-rot-img-blog {
+  width: auto;
+  height: auto;
+  position: absolute;
+  margin: 6% 32%;
+  inset: 0;
+  animation: rotation 30s infinite linear;
+}
+
+@keyframes on-off-blog { 
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}

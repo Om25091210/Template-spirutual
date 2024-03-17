@@ -1,0 +1,13 @@
+
+.cursor-follower {
+    position: fixed;
+    pointer-events: none;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .cursor-follower img {
+    width: 200px; /* Adjust the image size as needed */
+    height: auto;
+    display: block;
+  }
+  

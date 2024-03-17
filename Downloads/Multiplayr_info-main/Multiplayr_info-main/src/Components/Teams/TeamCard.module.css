@@ -1,0 +1,171 @@
+
+.TeamItem{
+  /* display: flex; */
+  /* justify-content: center; */
+  /* margin: auto; */
+  /* margin-left: 10px; */
+  margin: 0 10px;
+  /* background-color: brown; */
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    padding: 22px 24px; 
+    border-radius: 20px;
+    flex-direction: column;
+    /* padding: 20px; */
+    background: rgba(255,255,255,.1);
+   /* justify-content: space-between; */
+    /* width: 250px; */
+    height: 260px;
+    width: 100%;
+    align-items: center;
+    /* margin-right: 0px; */
+    transition: background 0.5s ease;
+    z-index: 10;
+    margin-bottom: 18px;
+    /* background-color: blue; */
+    
+  }
+  
+  .container:hover{
+    background: rgba(255,255,255,.3);
+    
+  }
+  
+  
+  .image{
+    margin-bottom: 10px;
+  }
+  
+  .title{
+    font-size: 20px;
+    font-weight: 750;
+  
+  }
+  
+  .description{
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  
+  .skills{
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+  
+  }
+  
+  .skill{
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 100px;
+    background-color: var(--color-dark);
+    padding: 2px 22px;
+  
+  }
+  
+  .links{
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .link{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    padding: 1px 22px;
+    border-radius: 100px;
+  }
+  
+  
+  
+  .image{
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  border-width: 2px;
+  border-color: white;
+  }
+  
+  .image img{
+  width: 140px;
+  /* aspect-ratio: 3/2; */
+  object-fit:fill;
+  mix-blend-mode: color-burn;
+  align-items: center;
+  border-radius: 100%;
+  }
+  
+  
+  .social i{
+  margin: 15px 5px;
+  }
+
+  .social i:hover{
+    transform: scale(1.09);
+    transition: transform 0.25s ease-in-out;
+  }
+  .team-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+  
+    
+  }
+
+  @media (max-width:425px) {
+ 
+
+  }
+  
+  @media (min-width:426px)and(max-width: 767px) {
+    .container{
+        
+        padding: 18px 24px; 
+        border-radius: 20px;
+        
+        
+        max-width: 100%;
+        height: 250px;
+        align-items: center;
+        /* margin-right: 0px; */
+        
+        
+        margin: 10px;
+        
+      }
+    
+  }
+  
+  /*---------------- Styles for screens with a minimum width of 768px and maximum width of 1023px (tablets) --------------------*/
+  @media (min-width: 768px) and (max-width: 1024px) 
+  {
+      
+     
+  
+}
+@media(min-width:1200){
+    .TeamItem{
+        margin: 5px;
+    }
+}
+  
+  
+  
